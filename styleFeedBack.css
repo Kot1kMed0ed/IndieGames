@@ -1,0 +1,196 @@
+/* StyleFeedBack */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    display: flex;
+    background-color: #04020F;
+    margin: 2.5% auto;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0 0 50px 0;
+    width: 50%;
+    flex-direction: column;
+    cursor: auto;
+}
+
+.close {
+    color: white;
+    display: flex;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 25px 0 0 890px;
+    flex-direction: row-reverse;
+    width: 0;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footerp {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.wrapper__title {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.user input {
+    padding: 5px;
+    border: 1px solid #fff;
+    background: inherit;
+    border-radius: 5px;
+    font: inherit;
+    width: 100%;
+    color: #ffffff;
+}
+
+.user input:focus,
+.user input:active {
+    border: 1px solid #fff;
+    outline: none;
+}
+
+.user {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.user-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-date {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.delivery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery__title {
+    margin-bottom: 5%;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+}
+
+.select select {
+    width: 300px;
+    font: inherit;
+    background: inherit;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.select option {
+    background: #272727;
+}
+
+.select textarea {
+    background: inherit;
+    font: inherit;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.select textarea:focus,
+.select textarea:active {
+    border: 1px solid #fff;
+    outline: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.delivery-info li {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+button {
+    width: 10%;
+    padding: 10px;
+    min-width: 300px;
+    cursor: pointer;
+    align-self: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #04020F;
+    font: inherit;
+    color: #fff;
+}
+
+button:hover {
+    background: #04142b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

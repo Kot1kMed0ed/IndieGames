@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieGames</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleAdaptiv.css">
+    <link rel="stylesheet" href="styleFeedBack.css">
+    <link rel="stylesheet" href="styleGameList.css">
+    <link rel="stylesheet" href="styleNikoMove.css">
+    <script src="anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>IndieGames</h1>
+            <div class="menu_small_icon">
+                <div class="stick1"></div>
+                <div class="stick2"></div>
+                <div class="stick3"></div>
+            </div>
+            <div class="menu-small">
+                <div class="menu_small_item"><a onclick="showModalWindowGames()">Games</a></div>
+                <div class="menu_small_item"><a href="https://www.fandom.com">Fandom</a></div>
+                <div class="menu_small_item"><a href="#footerblock" class="scroll">Contacts</a></div>
+                <div class="menu_small_item"><a onclick="showModalWindow()">FeedBack</a></div>
+            </div>
+            <div id="myModalGames" class="modal">
+                <div class="modal-content">
+                    <a onclick="closeModalWindowGames()" class="close">&times;</a>
+                    <h2 class="wrapper__title">Games</h2>
+                    <div class="slider">
+                        <div><img src="images/image 4.png" title="Улыбка"></div>
+                        <div><img src="images/image 8.png" title="Улыбка1"></div>
+                        <div><img src="images/image 16.png" title="Улыбка2"></div>
+                        <div><img src="images/image 25.png" title="Улыбка3"></div>
+                        <div><img src="images/image 29.png" title="Улыбка4"></div>
+                        <div><img src="images/image 37.png" title="Улыбка5"></div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="intro">
+                    <div class="introinner">
+                        <p id="introtexth2">Приветствую тебя на моем сайте!</p>
+                        <p id="introtexth3">Я расскажу тебе про мои любимые игры и свои впечатления в них... ты готов послушать?</p>
+                        <input onclick="showModalWindowNiko()" type="button" value="Да" class="buttonintro">
+                        <div id="myModalNiko" class="modalniko">
+                            <div class="modal-contentNiko">
+                                <div class="">
+                                    <div class="">
+                                        <canvas class="canvasniko" width="2000px" height="5000px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="nico" src="images/image 50.png">
+                </div>
+            </div>
+        </section>
+        <section class="maingame1">
+            <div class="containermain">
+                <div class="logowrappermain">
+                    <img class="logoimgmain1" src="images/image 4.png">
+                    <div class="intromain1">
+                        <div>
+                            <p class="introtextmain1">Это я персонаж этой игры и меня звать Нико!</p>
+                            <p class="introtextmainH1">
+                                OneShot – это сюрреалистическая приключенческая игра-головоломка с видом сверху и уникальными игровыми возможностями. 
+                                Вам предстоит провести ребенка по загадочному миру с целью возродить давно погибшее солнце. Мир знает о вашем существовании.
+                            </p>
+                        </div>
+                        <img class="nicomain" src="images/image 6.png">
+                    </div>
+                </div>
+                <div class="wrappermain">
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 3.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 4.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 5.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 6.png">
+                    </li>
+                </div>
+            </div>
+        </section>
+        <div class="mainotstup"></div>
+        <section class="maingame2">
+            <div class="containermain">
+                <div class="wrappermain">
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 9.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 10.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 11.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 12.png">
+                    </li>
+                </div>
+                <div class="logowrappermain">
+                    <img class="logoimgmain2" src="images/image 8.png">
+                    <div class="intromain2">
+                        <div>
+                            <p class="introtextmain2">Красивая и динамичная игра мне нравится!</p>
+                            <p class="introtextmainH2">
+                                Отправляйтесь в путь по бескрайним просторам сказочного мира, где вас ждут встречи с врагами-исполинами
+                                 и сложные, но интересные головоломки. Пришло время узнать, что уготовано Ори судьбой.
+                            </p>
+                        </div>
+                        <img class="nicomain" src="images/image 42.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mainotstup"></div>
+        <section class="maingame3">
+            <div class="containermain">
+                <div class="logowrappermain">
+                    <img class="logoimgmain3" src="images/image 16.png">
+                    <div class="intromain3">
+                        <div>
+                            <p class="introtextmain3">Главное не потераться в этом огромном мире...</p>
+                            <p class="introtextmainH3">
+                                Hollow Knight – это эпическое приключение в огромном разрушенном королевстве, 
+                                полном насекомых и героев. Исследуйте извилистые пещеры, сражайтесь с порчеными тварями и 
+                                заводите дружбу со странными жуками – все это в классической двухмерной ручной рисовке.
+                            </p>
+                        </div>
+                        <img class="nicomain" src="images/image 19.png">
+                    </div>
+                </div>
+                <div class="wrappermain">
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 19.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 20.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 21.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 22.png">
+                    </li>
+                </div>
+            </div>
+        </section>
+        <div class="mainotstup"></div>
+        <section class="maingame4">
+            <div class="containermain">
+                <div class="wrappermain">
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 26.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 27.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 28.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 29.png">
+                    </li>
+                </div>
+                <div class="logowrappermain">
+                    <img class="logoimgmain4" src="images/image 25.png">
+                    <div class="intromain4">
+                        <div class="introinnertextmain4">
+                            <p class="introtextmain4">Основал культ фисташек ни о чем не жалею...</p>
+                            <p class="introtextmainH4">
+                                Взращивайте собственный культ в землях лжепророков, совершайте походы по таинственным уголкам леса,
+                                 объединяйте вокруг себя верных последователей и несите своё слово в массы, чтобы сделать свой культ единственным
+                            </p>
+                        </div>
+                        <img class="nicomain" src="images/image 23.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mainotstup"></div>
+        <section class="maingame5">
+            <div class="containermain">
+                <div class="logowrappermain">
+                    <img class="logoimgmain5" src="images/image 29.png">
+                    <div class="intromain5">
+                        <div>
+                            <p class="introtextmain5">Мои последние 5 нервных клеток были потраченны здесь</p>
+                            <p class="introtextmainH5">
+                                Dead Cells — это экшн-платформер в жанре Rogue-lite и Metroidvania.
+                                 Вас ждет огромный, постоянно меняющийся замок... Если, конечно, 
+                                 вы сможете победить тех, кто встанет у вас на пути, в 2D-схватках в стиле 
+                                 Souls-lite. Без сохранений. Убивайте, умирайте, учитесь и пробуйте снова.
+                            </p>
+                        </div>
+                        <img class="nicomain" src="images/image 32.png">
+                    </div>
+                </div>
+                <div class="wrappermain">
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 32.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 33.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 34.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 35.png">
+                    </li>
+                </div>
+            </div>
+        </section>
+        <div class="mainotstup"></div>
+        <section class="maingame6">
+            <div class="containermain">
+                <div class="wrappermain">
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 38.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 39.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 40.png">
+                    </li>
+                    <li>
+                        <img class="imagesmain1" src="images/Rectangle 41.png">
+                    </li>
+                </div>
+                <div class="logowrappermain">
+                    <img class="logoimgmain6" src="images/image 37.png">
+                    <div class="intromain6">
+                        <div>
+                            <p class="introtextmain6">
+                                Красивый визуальный стиль и проработанные диалоги
+                                Нико понравилось!
+                            </p>
+                            <p class="introtextmainH6">
+                                Бросьте вызов богу мёртвых и прорубите себе путь из Подземного мира в игре в
+                                 жанрах «рогалик» и «данжен-кроулер» от создателей Bastion, Transistor и Pyre.
+                            </p>
+                        </div>
+                        <img class="nicomain" src="images/image 41.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footerblock">
+        <div class="copirait">
+            <div>
+                <a class="feedbackp" href="#">Лицензионное соглашение</a>
+                <a class="feedbackp" href="#">Новости</a>
+                <a class="feedbackp" href="#">FAQ</a>
+            </div>
+            <div class="footerp">
+                <h2 id="footerh2">@IndieGames</h2>
+                <p id="footerpp">все права защищены.</p>
+                <div class="introfooter">
+                    <div class="introinnerfooter">
+                        <p id="introtextfooter">Добро пожаловать на подвал сайта здесь вы сможешь связаться со мной!</p>
+                        <div class="imgfootericon">
+                            <a href="https://vk.com/kot1kmed0ed"><img class="imgfooterCeti" src="images/wk.png"></a>
+                            <a href="https://www.instagram.com/kot1kmedoed/"><img class="imgfooterCeti" src="images/insta.png"></a>
+                            <a href="https://telegram.org"><img class="imgfooterCeti" src="images/telegram.png"></a>
+                            <a href="https://steamcommunity.com/profiles/76561198435501186/"><img class="imgfooterCeti" src="images/steam.png"></a>
+                            <a onclick="showModalWindow()"><img class="imgfooterCeti" src="images/feedback.png">
+                                <div id="myModal" class="modal">
+                                    <div class="modal-content">
+                                        <a onclick="closeModalWindow()" class="close">&times;</a>
+                                        <h2 class="wrapper__title">FeedBack</h2>
+                                        <form class="form">
+                                            <div class="user">
+                                                <ul class="user-info">
+                                                    <li class="user-info__item">
+                                                        <label for="name">Ф.И.О</label>
+                                                        <input type="text" name="name" id="name" placeholder="Введите ваше ФИО">
+                                                    </li>
+                                                    <li class="user-info__item">
+                                                        <label for="email">E-mail</label>
+                                                        <input type="email" id="email" placeholder="Введите ваш e-mail">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                                <div class="select">
+                                                    <label for="comment">Оставте нам свой комментарий</label>
+                                                    <textarea name="" id="comment" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+                                                </div>
+                                            <button>Отправить отзыв</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <img class="nico" src="images/image 11.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
